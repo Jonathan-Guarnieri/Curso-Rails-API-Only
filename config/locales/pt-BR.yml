@@ -1,0 +1,19 @@
+'pt-BR':
+  hello: "Olá Mundo!"
+  date:
+    formats:
+      default: "%d/%m/%Y"
+#      short: "%d %b"
+#      long: "%d %B, %Y"
+#  activerecord:
+#    errors:
+#      messages:
+#        record_invalid: 'A validação falhou: %{errors}'
+#        restrict_dependent_destroy:
+#          has_one: Não é possível excluir o registro pois existe um %{record} dependente
+#          has_many: Não é possível excluir o registro pois existem %{record} dependentes
+#      models:
+#        phone:
+#          attributes:
+#            contact:
+#              required: Procedimento falhou pois necessita de um número de telefone
