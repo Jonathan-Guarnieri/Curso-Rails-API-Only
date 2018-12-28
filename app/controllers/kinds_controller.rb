@@ -81,5 +81,5 @@ class KindsController < ApplicationController
 #      #   ::Digest::SHA256.hexdigest(TOKEN)
 #      # )
 #    end
-  end
+#  end
 end
