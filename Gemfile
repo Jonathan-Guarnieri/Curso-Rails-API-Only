@@ -50,6 +50,8 @@ group :development, :test do
   gem 'pry-rails'
   # bla bla bla
   gem 'faker'
+  # GEM para testes
+  gem 'rspec-rails', '~> 3.8'
 end
 
 group :development do

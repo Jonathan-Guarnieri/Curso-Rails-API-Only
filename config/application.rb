@@ -33,6 +33,6 @@ module NotebookApi
     config.api_only = true
 
     #Autoload/lib
-    config.autoload_paths << Rails.root.join.('lib')
+    config.autoload_paths << Rails.root.join('lib')
   end
 end

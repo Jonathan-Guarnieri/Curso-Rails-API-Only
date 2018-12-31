@@ -12,7 +12,7 @@ module V1
       @contacts = Contact.all.page(page_number).per(per_page)
       
       # Cache-control ---> expires_in 30.seconds, public: true
-      if stale?(last_modified: @contacts[0].updated_at)
+      if stale?(etag: @contacts) # if stale?(last_modified: @contacts[0].updated_at) mudei
         render json: @contacts #, methods: :birthdate_br #, methods: [:hello, :i18n]
       end
 
@@ -23,7 +23,7 @@ module V1
 
     # GET /contacts/1
     def show
-      render json: @contact, include: [:kind, :address, :phones] #, meta: { author: "Jonathan Guarnieri" } #, include: [:kind, :phones, :address]
+      render json: @contact #, include: [:kind, :address, :phones] #, meta: { author: "Jonathan Guarnieri" } #, include: [:kind, :phones, :address]
     end
 
     # POST /contacts
